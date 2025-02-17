@@ -32,9 +32,9 @@ const ListTopics: React.FC<ListTopicsProps> = ({
     });
   };
   return (
-    <div key={data.id}>
+    <div key={'title_' + data.id}>
       <li
-        key={data.id}
+        key={'content_' + data.id}
         onClick={() => {
           onClickFn(index);
         }}
@@ -61,7 +61,7 @@ const TopicCard: React.FC<TopicCardProps> = ({ topics }) => {
       {topics.map((topic, index) => {
         return (
           <ListTopics
-            key={index}
+            key={topic.id}
             index={index}
             isClicked={isClicked}
             setIsClicked={setIsClicked}
