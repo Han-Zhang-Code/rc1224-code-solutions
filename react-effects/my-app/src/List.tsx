@@ -17,9 +17,10 @@ export function List() {
       try {
         const data = await readItems();
         setItems(data);
-        setIsLoading(false);
       } catch (err) {
         setError(err);
+      } finally {
+        setIsLoading(false);
       }
     }
     fetchData();
