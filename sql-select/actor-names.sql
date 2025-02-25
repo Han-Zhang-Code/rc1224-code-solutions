@@ -1,1 +1,1 @@
-select "actorId","firstName","lastName" from "actors"
+select "actorId","firstName","lastName" from "actors";

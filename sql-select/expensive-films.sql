@@ -1,1 +1,1 @@
-select "filmId", "title","replacementCost" from "films" order by "replacementCost" desc limit 10
+select "filmId", "title","replacementCost" from "films" order by "replacementCost" desc limit 10;
